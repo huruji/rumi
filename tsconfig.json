@@ -23,6 +23,10 @@
       "es7",
       "dom",
       "dom.iterable"
+    ],
+    "typeRoots": [
+      "@type/**",
+      "typings/**"
     ]
   },
   "include": [

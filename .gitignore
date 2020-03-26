@@ -126,3 +126,5 @@ typings/
 .rts2_cache_umd
 
 dist
+
+demo

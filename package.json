@@ -5,7 +5,7 @@
   "main": "commitlint.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:w": "tsc -p . -w"
+    "dev": "tsc -p . -w"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "@types/node": "^12.7.2",
+    "@types/rollup-plugin-postcss": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.2.1",
@@ -39,12 +40,29 @@
     "lint-staged": "^9.2.3",
     "prettier": "^1.18.2",
     "standard-version": "^7.0.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.8.3"
   },
   "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-image": "^2.0.4",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/commander": "^2.12.2",
     "commander": "^3.0.1",
     "cosmiconfig": "^5.2.1",
-    "rollup": "^1.20.3"
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "sass": "^1.26.3",
+    "v8-compile-cache": "^2.1.0"
   }
 }
